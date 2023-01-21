@@ -13,17 +13,10 @@
       with pkgs; rec
       {
         devShell = mkShell rec {
-          #nativeBuildInputs = [
-          #  pkg-config
-          #  llvmPackages.bintools
-          #];
           buildInputs = [
             cmake
             cppzmq
-            czmq
             gnumake
-            mbedtls
-            pkg-config
             protobuf
             protobufc
           ];
